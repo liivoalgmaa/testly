@@ -3,6 +3,8 @@
 require 'config.php';
 require'classes/Request.php';
 require'classes/user.php';
+require'classes/database.php';
+
 
 if (file_exists('controllers/'.$request->controller.'.php'))
 {
@@ -14,4 +16,5 @@ if (isset($controller->requires_auth)){
 $controller->{$request->action}();
 }
 else {echo "The Page'{$request->controller}'does not exist";
+	//var_dump($request->controller);
 }
