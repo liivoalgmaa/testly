@@ -5,7 +5,6 @@ class Request
 	public $controller;
 	public $action = 'index';
 	public $params = array();
-
 	public function __construct()
 	{
 		if (isset($_SERVER ['PATH_INFO'])) {
