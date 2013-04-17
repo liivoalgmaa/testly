@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Sign in &middot; Twitter Bootstrap</title>
+	<title>Sign in &middot; Testly</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<meta name="author" content="">
@@ -42,9 +42,8 @@
 		}
 
 	</style>
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
-	<link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
+
 
 	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 	<!--[if lt IE 9]>
@@ -59,22 +58,22 @@
 	<link rel="shortcut icon" href="../assets/ico/favicon.png">
 </head>
 
-<body  style="background-image:url(assets/img/metal2.jpg) ">
+<body style="background-image: url(assets/img/bg.jpg)">
 
 <div class="container">
 
-	<form class="form-signin">
-		<h2 class="form-signin-heading">Please sign in</h2>
-		<input type="text" class="input-block-level" placeholder="Username">
-		<input type="password" class="input-block-level" placeholder="Password">
+	<form class="form-signin" method="POST">
+		<h2 class="form-signin-heading">Logi sisse</h2>
+		<input name="username" type="text" class="input-block-level" placeholder="Kasutajanimi">
+		<input name="password" type="password" class="input-block-level" placeholder="Parool">
 		<label class="checkbox">
-			<input type="checkbox" value="remember-me"> Remember me
+		<label class="checkbox">
+			<input type="checkbox" value="remember-me"> Jäta mind meelde
 		</label>
-		<button class="btn btn-large btn-primary" type="submit">Sign in</button>
+		<button class="btn btn-large btn-primary" type="submit">Logi sisse</button>
 	</form>
 
 </div> <!-- /container -->
-
 
 </body>
 </html>
