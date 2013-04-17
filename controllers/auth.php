@@ -27,7 +27,7 @@ class auth
 				$request->redirect('tests');
 			}
 			$errors[] = "vale kasutajanimi või parool!";
-ss
+
 		}
 		require 'views/auth_view.php';
 	}
