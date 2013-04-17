@@ -2,17 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list id="cf333c91-31c9-4049-94d1-02001c5fb4d4" name="Default" comment="" />
-    <list default="true" id="285ac87a-d640-4f89-a9ce-4301537ffdb1" name="804555-48140467 Sisselogimine usernameiga" comment="Change $_REQUEST to $request. Add login view.">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/Request.php" afterPath="$PROJECT_DIR$/classes/Request.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/auth.php" afterPath="$PROJECT_DIR$/controllers/auth.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.php" afterPath="$PROJECT_DIR$/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/database.php" afterPath="$PROJECT_DIR$/classes/database.php" />
+    <list default="true" id="285ac87a-d640-4f89-a9ce-4301537ffdb1" name="804555-48140467 Sisselogimine usernameiga" comment="Add default controller. Add redirect function. Enhanced nonexistent controller message.">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="testly.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/index.php" changelist="285ac87a-d640-4f89-a9ce-4301537ffdb1" time="1366113500194" ignored="false" />
-    <file path="/Dummy.txt" changelist="285ac87a-d640-4f89-a9ce-4301537ffdb1" time="1366181654730" ignored="false" />
+    <file path="/Dummy.txt" changelist="285ac87a-d640-4f89-a9ce-4301537ffdb1" time="1366187853392" ignored="false" />
     <file path="/test.php" changelist="cf333c91-31c9-4049-94d1-02001c5fb4d4" time="1366018863889" ignored="false" />
     <file path="/Request.php" changelist="285ac87a-d640-4f89-a9ce-4301537ffdb1" time="1366187618029" ignored="false" />
     <file path="/.htaccess" changelist="cf333c91-31c9-4049-94d1-02001c5fb4d4" time="1366022975160" ignored="false" />
@@ -23,6 +20,7 @@
     <file path="/user.php" changelist="285ac87a-d640-4f89-a9ce-4301537ffdb1" time="1366108312084" ignored="false" />
     <file path="/auth.php" changelist="285ac87a-d640-4f89-a9ce-4301537ffdb1" time="1366182272741" ignored="false" />
     <file path="/auth_view.php" changelist="285ac87a-d640-4f89-a9ce-4301537ffdb1" time="1366112922258" ignored="false" />
+    <file path="/.gitignore" changelist="285ac87a-d640-4f89-a9ce-4301537ffdb1" time="1366187944220" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,10 +40,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="27" selection-start="338" selection-end="338" vertical-scroll-proportion="0.36585367">
+            <state line="20" column="0" selection-start="476" selection-end="476" vertical-scroll-proportion="-12.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="19" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -156,6 +163,7 @@
         <option value="$PROJECT_DIR$/classes/database.php" />
         <option value="$PROJECT_DIR$/classes/Request.php" />
         <option value="$PROJECT_DIR$/config.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -345,7 +353,11 @@
       <created>1366114233076</created>
       <updated>1366114233076</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Add default controller. Add redirect function. Enhanced nonexistent controller message.">
+      <created>1366187869488</created>
+      <updated>1366187869488</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <option name="markAsInProgress" value="true" />
     <servers>
       <PivotalTracker shared="false" url="http://www.pivotaltracker.com">
@@ -383,13 +395,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="683" y="0" width="683" height="728" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293919" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20289855" sideWeight="0.67105263" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20289855" sideWeight="0.67105263" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33614865" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -399,7 +412,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -447,7 +459,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change $_REQUEST to $request. Add login view." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add default controller. Add redirect function. Enhanced nonexistent controller message." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -466,18 +478,12 @@
     <MESSAGE value="Add basic MVC functionality" />
     <MESSAGE value="Add controller check to index.php. Create user class." />
     <MESSAGE value="Change $_REQUEST to $request. Add login view." />
+    <MESSAGE value="Add default controller. Add redirect function. Enhanced nonexistent controller message." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="1262" selection-end="1262" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="21" selection-start="61" selection-end="61" vertical-scroll-proportion="0.0" />
@@ -574,7 +580,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="27" selection-start="338" selection-end="338" vertical-scroll-proportion="0.36585367">
+        <state line="20" column="0" selection-start="476" selection-end="476" vertical-scroll-proportion="-12.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="19" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
