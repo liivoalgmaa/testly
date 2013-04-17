@@ -1,7 +1,7 @@
 <?php
 /**
  * Created by JetBrains PhpStorm.
- * User: Locked
+ * User: Rait
  * Date: 16.04.13
  * Time: 13:34
  * To change this template use File | Settings | File Templates.
@@ -14,9 +14,9 @@ class auth
 	{
 		global $request;
 		global $errors;
-		if (isset($_SESSION['session_expired'])) {
-			$errors[] = "session on aegunud!";
-			unset($_SESSION['session_expired']);
+		if (isset($_SESSION['session expired'])) {
+			$errors[] = "sessioon on aegunud!";
+			unset($_SESSION['session expired']);
 		}
 		if (isset($_POST['username'])) {
 			$username = $_POST['username'];
@@ -32,7 +32,8 @@ class auth
 		require 'views/auth_view.php';
 	}
 
-	function logout(){
+	function logout()
+	{
 		global $request;
 		session_destroy();
 		$request->redirect('auth');
