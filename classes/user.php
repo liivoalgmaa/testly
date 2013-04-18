@@ -6,10 +6,11 @@
  * Time: 13:03
  * To change this template use File | Settings | File Templates.
  */
-
+//uus objektitüüp nimega user
 class user
 {
 
+//user tüüp objekti atribuut nimega $logged_in, vaikeväärtusega FALSE.
 	public $logged_in = FALSE;
 
 	function __construct()
