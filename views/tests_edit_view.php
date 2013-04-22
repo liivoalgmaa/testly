@@ -27,7 +27,7 @@
 		<textarea name="question_text"><?=$test['question_text']?></textarea>
 		<label>Tüüp</label>
 		<select name="type_id" id="type_id">
-			<option value="1">Ture/false</option>
+			<option value="1">True/False</option>
 			<option value="2" selected="selected">Multiple choice</option>
 			<option value="3">Multiple response</option>
 			<option value="4">Fill in the blank</option>

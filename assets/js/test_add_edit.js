@@ -23,7 +23,7 @@ $(document).ready(function () {
 			}
 		});
 		var list = $('#type_id option');
-		for (var i = 0; i < list - length; i++) {
+		for (var i = 0; i < list.length; i++) {
 			if ($(list[i]).val() == current_type_id) {
 				$(list[i]).attr('selected', 'selected')
 			}
