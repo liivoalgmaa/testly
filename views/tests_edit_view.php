@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/smoothness/jquery-ui.css" />
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css"/>
 <script>
 	$(function () {
 		$("#tabs").tabs();
@@ -8,15 +8,20 @@
 <div id="tabs">
 	<ul>
 		<li><a href="#tabs-1">Üldine</a></li>
-		<li><a href="#tabs-2">lalala</a></li>
-		<li><a href="#tabs-3">laa</a></li>
+		<li><a href="#tabs-2">Proin dolor</a></li>
+		<li><a href="#tabs-3">Kolmas</a></li>
 	</ul>
 	<div id="tabs-1">
-		<p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet
-			mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean
-			tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae
-			ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci
-			tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+		<form method="post">
+			<label>Küsimuse nimi</label>
+			<input type="text" name="name" value="<?=$test['name']?>">
+			<label>Sissejuhatus</label>
+			<textarea name="introduction"><?=$test['introduction']?></textarea>
+			<label>Kokkuvõte</label>
+			<textarea name="conclusion"><?=$test['conclusion']?></textarea>
+			<label>Passcode</label>
+			<input type="text" name="passcode" value="<?=$test['passcode']?>">
+		</form>
 	</div>
 	<div id="tabs-2">
 		<p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis
@@ -40,4 +45,3 @@
 			vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero
 			vitae lectus hendrerit hendrerit.</p>
 	</div>
-</div>
