@@ -7,45 +7,53 @@
 <a class="btn btn-large btn-info" href="/testly/tests/add/">Salvesta</a>
 <a class="btn btn-large btn-info" href="<?=BASE_URL?>">Loobu</a>
 <div id="tabs">
+<!-- huge tabs div and tab headlines -->
+<div id="tabs">
 	<ul>
 		<li><a href="#tabs-1">Üldine</a></li>
 		<li><a href="#tabs-2">Küsimused</a></li>
-		<li><a href="#tabs-3">Raport</a></li>
+		<li><a href="#tabs-3">Raportid</a></li>
 	</ul>
+
+	<!-- tab 1 that has form to fill in the general info -->
 	<div id="tabs-1">
 		<form method="post">
 			<label>Küsimuse nimi</label>
 			<input type="text" name="name" value="<?= $test['name'] ?>">
 			<label>Sissejuhatus</label>
-			<textarea name="introduction"><?=$test['introduction']?></textarea>
+			<textarea name="introduction"><??></textarea>
 			<label>Kokkuvõte</label>
-			<textarea name="conclusion"><?=$test['conclusion']?></textarea>
+			<textarea name="conclusion"><?= $test['conclusion'] ?></textarea>
 			<label>Passcode</label>
 			<input type="text" name="passcode" value="<?= $test['passcode'] ?>">
 		</form>
 	</div>
+
+	<!-- tab to fill in the question and the type of answer expected and the right one -->
 	<div id="tabs-2">
 		<label>Küsimus</label>
-		<textarea name="question_text"><?=$test['question_text'] ? $question['question_text'] : ''?></textarea>
+		<textarea name="question_text"><?=$question['question_text'] ? $question['question_text'] : '' ?></textarea>
 		<label>Tüüp</label>
 		<select name="type_id" id="type_id">
-			<option value="1">Tõene/Väär</option>
-			<option value="2" selected="selected">Mitmik valik</option>
-			<option value="3">Mitu õiget</option>
-			<option value="4">Täida lünk</option>
+			<option value="1">Õige/vale</option>
+			<option value="2" selected="selected">Mitu õiget</option>
+			<option value="3">Mitu valikut</option>
+			<option value="4">Täida tühikud</option>
 		</select>
-
 		<div id="answer-template">
 			<div id="type_id_1" class="answer-template">
-				<label>Sisesta kaks vastust ja märgi ära õige</label>
-				<input type="radio" name="tf.correct" value="0" checked="checked"<p> Tõene</p>
-				<input type="radio" name="tf.correct" value="1" <p> Väär</p>
-
+				<label>Sisesta kaks vastust ja märgi ära õige vastus</label>
+				<input type="radio" name="tf.correct" value="0" checked="checked">
+				<textarea name="answer.0">True</textarea>
+				<input type="radio" name="tf.correct" value="1">
+				<textarea name="answer.1">False</textarea>
 			</div>
 			<div id="type_id_2" class="answer-template">
-				<label>Sisesta vastuse variandid ja märgi ära õige</label>
-				<a href="#" onclick="return addMultipleChoice()">Lisa</a> / <a href="#" onclick="return removeMultipleChoice()
-">Eemalda</a> vastusevariant
+				<label>Sisesta vastuse variandid ja märgi ära, milline variant on õige</label>
+				<!-- add or delete a choice cluster -->
+				<a href="#" onclick="return addMultipleChoice()">Add</a>/<a href="#" onclick="return removeMultipleChoice()
+">remove</a> vastusevariant
+				<!-- multiple-choice-options version-->
 				<div id="multiple-choice-options">
 					<div class="answer-option">
 						<input type="radio" name="mc.correct" value="0" checked="checked">
@@ -66,10 +74,13 @@
 				</div>
 
 			</div>
+
 			<div id="type_id_3" class="answer-template">
-				<label>Sisesta vastuse variandid ja märgi ära õiged</label>
-				<a href="#" onclick="return addMultipleResponse()">Lisa</a> / <a href="#" onclick="return
-removeMultipleResponse()">Eemalda</a> vastusevariant
+				<label>Sisesta vastuse variandid ja märgi ära, millised variandid on õiged</label>
+				<!-- add or delete a choice cluster -->
+				<a href="#" onclick="return addMultipleResponse()">Add</a>/<a href="#" onclick="return removeMultipleResponse()
+">remove</a> vastusevariant
+				<!-- multiple-response-answer-option version-->
 				<div id="multiple-response-answer-option">
 					<div class="answer-option">
 						<input type="checkbox" name="mr.correct" value="1">
@@ -91,14 +102,15 @@ removeMultipleResponse()">Eemalda</a> vastusevariant
 
 			</div>
 			<div id="type_id_4" class="answer-template">
-				<label>Sisesta võimaliked vastuse variandid (Üks vastus ühte kasti)</label>
-
-				<div id="fill-in-the-blanke-answer-option">
+				<label>Sisesta võimalikud vastuse variandid(Üks vastus ühte kasti)</label>
+				<!-- fill-in-the-blank-answer-option version-->
+				<div id="fill-in-the-blank-answer-option">
 					<div class="answer-option">
 						<input type="checkbox" name="fitb.correct" checked="checked" disabled="true">
 						<textarea name="fitb.answer.0"></textarea>
 					</div>
 				</div>
+
 			</div>
 		</div>
 	</div>

@@ -1,2 +1,2 @@
 <?
-require('tests_add_view');
+require('tests_add_view.php');
