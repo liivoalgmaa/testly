@@ -2,13 +2,12 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Sign in &middot; Testly</title>
+	<title>Logi sisse &middot; Testly</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<meta name="author" content="">
 
 	<!-- Le styles -->
-	<link href="../assets/css/bootstrap.css" rel="stylesheet">
 	<style type="text/css">
 		body {
 			padding-top: 40px;
@@ -25,16 +24,14 @@
 			-webkit-border-radius: 5px;
 			-moz-border-radius: 5px;
 			border-radius: 5px;
-			-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
-			-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
-			box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
+			-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+			-moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+			box-shadow: 0 1px 2px rgba(0,0,0,.05);
 		}
-
 		.form-signin .form-signin-heading,
 		.form-signin .checkbox {
 			margin-bottom: 10px;
 		}
-
 		.form-signin input[type="text"],
 		.form-signin input[type="password"] {
 			font-size: 16px;
@@ -45,7 +42,6 @@
 
 	</style>
 	<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
-
 
 	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 	<!--[if lt IE 9]>
@@ -60,23 +56,20 @@
 	<link rel="shortcut icon" href="../assets/ico/favicon.png">
 </head>
 
-<body style="background-image: url(assets/img/bg.jpg)">
+<body style="background-image: url(assets/img/iostexture.png)">
 
 <div class="container">
 
-	<form class="form-signin" method="POST">
+	<form method="post" class="form-signin">
 		<h2 class="form-signin-heading">Logi sisse</h2>
-		<input name="username" type="text" class="input-block-level" placeholder="Kasutajanimi">
-		<input name="password" type="password" class="input-block-level" placeholder="Parool">
+		<input name="username" type="text" class="input-block-level" placeholder="kasutajanimi">
+		<input name="password" type="password" class="input-block-level" placeholder="parool">
 		<label class="checkbox">
-			<label class="checkbox">
-				<input type="checkbox" value="remember-me"> Jäta mind meelde
-			</label>
-			<button class="btn btn-large btn-primary" type="submit">Logi sisse</button>
+			<input type="checkbox" value="remember-me"> Pea mind meeles
+		</label>
+		<button class="btn btn-large btn-primary" type="submit">Logi sisse</button>
 	</form>
 
-</div>
-<!-- /container -->
-
+</div> <!-- /container -->
 </body>
 </html>
